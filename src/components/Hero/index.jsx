@@ -1,6 +1,8 @@
 import React from 'react'
 import invetoryvectorimg from "../../../public/inventoryvector.png"
 import Layout from '../../styles/Layout'
+// import Button from '../../styles/Button'
+import { Button } from '../ui/button'
 
 const Hero = () => {
   return (
@@ -12,8 +14,9 @@ const Hero = () => {
       Inventory Management
       </p>
       <div className='flex gap-4 mt-10'>
-      <button className='bg-[#C93F2E] p-4 border-2 border-none  rounded-full font-semibold'>Add Categories</button>
-      <button className='bg-[#C93F2E] p-4 border-2 border-none  rounded-full font-semibold'>Add Products</button></div>
+      <Button className="bg-[#C93F2E] text-white">Add Categories</Button>
+      <Button className="bg-[#C93F2E] text-white">Add Products</Button>
+      </div>
     </div>
     <div className='md:w-1/2  flex items-center justify-end'>
     <img src={invetoryvectorimg} alt="" />

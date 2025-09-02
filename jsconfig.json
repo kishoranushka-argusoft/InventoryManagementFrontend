@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "ES6",               // ECMAScript target version
+      "module": "commonjs",          // Module system
+      "baseUrl": "./",               // Base directory for non-relative imports
+      "paths": {                     // Aliases for import paths
+        "@/*": ["src/*"]
+      },
+      "checkJs": true,               // Enable type checking for JS files
+      "allowSyntheticDefaultImports": true
+    },
+    "include": ["src"],              // Folders to include
+    "exclude": ["node_modules", "dist"] // Folders to ignore
+  }

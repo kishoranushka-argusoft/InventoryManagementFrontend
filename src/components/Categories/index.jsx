@@ -2,6 +2,8 @@ import React from 'react'
 import Layout from '../../styles/Layout'
 import Search from '../Search'
 import CategoriesCard from '../CategoriesCard'
+// import Button from '../../styles/Button'
+import { Button } from '../ui/button'
 
 const Categories = () => {
   return (
@@ -11,10 +13,10 @@ const Categories = () => {
         <div className='w-1/2  '>
             <Search />
         </div>
-        <button className='w-60 bg-[#C93F2E] rounded-full text-white font-semibold'>View All Categories</button>
+        <Button className="bg-[#C93F2E] text-white">View All Categories</Button>
      </div>
-     <div>
-
+     <div className='mt-16'>
+      <CategoriesCard />
      </div>
    </Layout>
   )
